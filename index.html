@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+<meta charset="utf-8"/>
+<style>
+  body {
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0px;
+    font-family: Roboto;
+  }
+
+  #flex-box-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  #top-nav-box {
+    font-size: 14px;
+  }
+  #main-box {
+    margin: auto;
+
+  }
+
+  #bottom-country-box {
+    background-color: #F2F2F2;
+    font-size: 14px;
+  }
+
+
+  #bottom-nav-box {
+    background-color: #F2F2F2;
+    font-size: 14px;
+  }
+  #google-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8%;
+  }
+
+  input[type=text] {
+    width: 30%;
+    padding: 15px 40px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border-color: rgb(220,220,227);
+    border-width: 1px;
+    background-image: url(/icons/outline_search_black_24dp.png);
+    background-size: 4%;
+    background-repeat: no-repeat;
+    background-position: 2.5% 60%;
+  }
+  input:hover {
+
+  }
+  #search-button {
+    width: 130px;
+    height: 35px;
+    background-color: f8f9fa;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color:b3b6b7;
+    margin: 10px;
+    font-family: Roboto;
+  }
+  #search-button:hover {
+    border-style: solid;
+    border-color: lightgray;
+  }
+  #feeling-lucky-button{
+      width: 150px;
+      height: 35px;
+      background-color: f8f9fa;
+      border-radius: 5px;
+      border:none;
+      font-size: 15px;
+      font-family: Roboto;
+  }
+  #feeling-lucky-button:hover {
+    border-style: solid;  
+    border-color: lightgray;
+  }
+
+  #container {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: none;
+  }
+
+  li a {
+    display: list-item;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    text-decoration-line: underline;
+  }
+    .icon {
+    background: url(icons/outline_apps_black_24dp.png) no-repeat center center;
+    margin: auto;
+    background-position: center;
+    text-align: center;
+    position: relative
+    vertical-align: middle;
+  }
+  li img {
+    vertical-align: bottom;
+  }
+  #line-1, {
+  height: 1px;
+  background: #DADCE0;
+}
+  #line-2 {
+  height: 1px;
+  background:#DADCE0;
+}
+</style>
+</head>
+<body>
+  <div id="flex-box-container">
+    <div id="top-nav-box">
+      <ul>
+        <li style="float:right"><a class="active">Sign in</a></li>
+        <li style="float:right"><a class="icon"></a> </li>
+        <li style="float:right"><a class="active">Images</a></li>
+        <li style="float:right"><a class="active">Gmail</a></li>
+      </ul>
+    </div>
+    <div id="main-box">
+      <img id="google-logo" src="images/googlelogo_color_272x92dp.png" alt="Google Logo";>
+      <form id="search-box-form">
+        <input type="text" style="margin:20px auto; display:block;" size="280">
+        <div id="container">
+          <button type="button" id="search-button" >Google Search</button>
+          <button type="button" id="feeling-lucky-button">I'm Feeling Lucky</button>
+        </div>
+      </form>
+    </div>
+    <div id="line-1"></div>
+    <div id="bottom-country-box">
+      <ul>
+          <li style="float:left"><a class="active">Turkey</a> </li>
+      </ul>
+    </div>
+    <div id="line-2"></div>
+    <div id="bottom-nav-box">
+      <ul>
+        <li style="float:left"><a class="active">About</a></li>
+        <li style="float:left"><a class="active">Advertising</a></li>
+        <li style="float:left"><a class="active">Business</a></li>
+        <li style="float:left"><a class="active">How search works</a></li>
+        <li style="float:right"><a class="active">Privacy</a></li>
+        <li style="float:right"><a class="active">Terms</a></li>
+        <li style="float:right"><a class="active">Settings</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
